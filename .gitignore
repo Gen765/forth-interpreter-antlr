@@ -1,0 +1,27 @@
+# --- ANTLR auxiliary files ---
+# The generated Python lexer, parser, and visitor are intentionally versioned
+# so users do not need Java or the ANTLR generator at runtime.
+forthListener.py
+forth.interp
+forth.tokens
+forthLexer.interp
+forthLexer.tokens
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
