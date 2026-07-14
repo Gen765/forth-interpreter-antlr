@@ -10,14 +10,13 @@ implements the stack, built-in words and user definitions.
 
 ## 🏗️ Interpreter architecture
 
-```mermaid
-flowchart LR
-    A[Source text] --> B[ANTLR lexer]
-    B --> C[ANTLR parser]
-    C --> D[Parse tree]
-    D --> E[Python visitor]
-    E --> F[Stack and output]
-```
+<p align="center">
+  <img
+    src="docs/images/diagrams/interpreter-flow.svg"
+    alt="Forth source flowing through the ANTLR lexer and parser into the Python visitor, stack and output"
+    width="760"
+  >
+</p>
 
 The generated lexer, parser and base visitor are committed, so using the
 interpreter does not require Java or an ANTLR download. Each call to
